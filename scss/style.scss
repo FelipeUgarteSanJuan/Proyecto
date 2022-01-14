@@ -7,3 +7,18 @@
 @import "header";
 @import "main";
 @import "media";
+$parrafo:( x: rgb(73, 150, 173), m: rgb(59, 172, 125), f: rgb(38, 187, 58), );
+$x: map-get($map: $parrafo, $key:x);
+$m: map-get($map:$parrafo, $key:m);
+$f: map-get($map:$parrafo, $key:f);
+.parrafo1 {
+    color: $x;
+}
+
+.parrafo2 {
+    color: $m;
+}
+
+.parrafo3 {
+    color: $f;
+}

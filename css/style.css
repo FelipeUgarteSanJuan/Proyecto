@@ -24,7 +24,7 @@ body {
   color: #696969;
   font-family: 'Times New Roman', Times, serif; }
 
-.caja1 {
+.caja1, .footer {
   padding: 20px;
   border: 4px;
   color: #1b1919;
@@ -35,12 +35,6 @@ body {
   border: 4px;
   color: #1b1919;
   background-color: #e2e279; }
-
-.caja1 {
-  grid-area: caja1; }
-
-.caja2 {
-  grid-area: caja2; }
 
 h1 {
   font-size: 1.5rem; }
@@ -55,13 +49,6 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "header header header" "contenido contenido sidebar" "caja1 caja2 sidebar" "footer footer footer"; }
-
-.footer {
-  background-color: #f4a460;
-  color: #1b1919;
-  grid-area: footer;
-  padding: 20px;
-  border-radius: 4px; }
 
 header {
   background-color: #f4a460;
@@ -88,3 +75,12 @@ h1 {
 
 h2 {
   font-size: 1.5rem; }
+
+.parrafo1 {
+  color: #4996ad; }
+
+.parrafo2 {
+  color: #3bac7d; }
+
+.parrafo3 {
+  color: #26bb3a; }

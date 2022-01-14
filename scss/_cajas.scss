@@ -1,11 +1,4 @@
-.caja1 {
-    padding: 20px;
-    border: 4px;
-    color: $color_letra;
-    background-color: $bg_caja;
-}
-
-.caja2 {
+@mixin cajas {
     padding: 20px;
     border: 4px;
     color: $color_letra;
@@ -13,9 +6,9 @@
 }
 
 .caja1 {
-    grid-area: caja1;
+    @include cajas();
 }
 
 .caja2 {
-    grid-area: caja2;
+    @include cajas();
 }
