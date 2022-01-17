@@ -1,9 +1,6 @@
 @media screen and (max-width: 768px) {
-    .contenedor {
+    .container {
         gap: 0.7rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "caja1 caja2 caja2" "footer footer footer";
     }
 }
 
@@ -13,4 +10,49 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1320px;
+    }
 }

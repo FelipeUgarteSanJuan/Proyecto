@@ -1,12 +1,9 @@
-@import "variables";
-@import "aside";
 @import "body";
-@import "cajas";
-@import "contenedor";
-@import "footer";
-@import "header";
-@import "main";
+@import "formulario";
+@import "redes";
+@import "sociales";
 @import "media";
+@import "footer";
 $parrafo:( x: rgb(73, 150, 173), m: rgb(59, 172, 125), f: rgb(38, 187, 58), );
 $x: map-get($map: $parrafo, $key:x);
 $m: map-get($map:$parrafo, $key:m);
