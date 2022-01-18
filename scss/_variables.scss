@@ -1,0 +1,35 @@
+$cl: #000000;
+$letras: #17267a;
+$color: #141313;
+// Mixins
+@mixin condicioon ($letras) {
+    font: $color;
+    @if $color==$cl {
+        color: #17267a;
+    }
+}
+
+.redes {
+    color: $letras;
+}
+
+$container:( x: rgb(73, 150, 173), m: rgb(59, 172, 125), f: rgb(38, 187, 58), w: rgb(93, 158, 62));
+$x: map-get($map:$container, $key:x);
+$m: map-get($map:$container, $key:m);
+$f: map-get($map:$container, $key:f);
+$w: map-get($map:$container, $key:w);
+.caja1 {
+    color: $x;
+}
+
+.caja2 {
+    color: $m;
+}
+
+.caja3 {
+    color: $f;
+}
+
+.caja4 {
+    color: $w;
+}
